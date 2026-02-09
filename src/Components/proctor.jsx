@@ -24,7 +24,7 @@ const Proctor = ({ candidate }) => {
     if (candidate?.preferredMode === 'IFRAME') {
       setView('IFRAME');
     } else {
-      navigate('/exam/1');
+      navigate('#/exam/1');
     }
   };
 

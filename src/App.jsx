@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import WelcomeScreen from './Components/WelcomeScreen';
 import ExamScreen from './Components/ExamScreen';
 import Proctor from './Components/proctor';
