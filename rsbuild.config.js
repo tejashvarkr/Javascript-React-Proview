@@ -9,6 +9,12 @@ export default defineConfig({
       'import.meta.env.dsn': JSON.stringify(process.env.dsn),
     },
   },
+   output: {
+    // This resolves the 404 errors by prefixing paths with your repo name
+    assetPrefix: process.env.NODE_ENV === 'production' 
+      ? '/Javascript-React-Proview/' 
+      : '/',
+  },
 
   html: {
     tags: [
