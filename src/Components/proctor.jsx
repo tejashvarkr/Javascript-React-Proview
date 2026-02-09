@@ -24,7 +24,7 @@ const Proctor = ({ candidate }) => {
     if (candidate?.preferredMode === 'IFRAME') {
       setView('IFRAME');
     } else {
-      navigate('#/exam/1');
+      navigate('/exam/1');
     }
   };
 
@@ -53,7 +53,7 @@ const Proctor = ({ candidate }) => {
 
       {view === 'IFRAME' && (
         <iframe 
-          src="/exam/1" 
+          src="#/exam/1" 
           style={styles.iframe} 
           title="Exam" 
           allow="camera;microphone;fullscreen"
